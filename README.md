@@ -8,7 +8,7 @@ In this project we combine 2 popular Neural Network Architecture to verify the a
 
 We use ResNet as the base network . The following image is the architecture of the ResNet:
 
-  ![Uploading base_network.png…]()
+  ![base_network](https://user-images.githubusercontent.com/57098615/165115852-b7680112-dfd6-4ed8-8dae-bfa7316905cc.png)
 
 # Siamese
 
