@@ -20,6 +20,12 @@ Here, the siamese network takes a pair of images as input and outputs the Euclid
 
 The datset used here is the [CEDAR Dataset] (http://www.cedar.buffalo.edu/NIJ/data/signatures.rar)
 
+## Preprocessing
+
+We create a dataframe whose first 2 columns contain the relative paths of the image pair and the third column contains the label ; where, 1 corresponds to the legitimate pair and 0 corresponds to the forgery/fake pair .
+
+We resize the image into the shape (150,220) .
+
 ## Loss function :
 
 The loss function used here is contrastive loss . It minimizes the distance between similar input and maximizes the distance between dissimilar inputs .
@@ -28,4 +34,8 @@ The loss function used here is contrastive loss . It minimizes the distance betw
   
 ## Training
 
-We use the TPUs provided by Google Colab for training .
+We use the TPUs provided by Google Colab for training . 
+
+## Evaluation 
+
+We use the best model, so far . Then, predict the output for the test set . We also use the a threshold of 0.5 for classifying . 
